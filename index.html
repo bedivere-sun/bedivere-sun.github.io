@@ -1,11 +1,33 @@
 <html>
   <head>
-    <title>Bedivere 的个人主页</title>
+    <title>Bedivere Sun 的 Github Page</title>
     <meta char-set="utf-8" />
+    <link rel="stylesheet" href="./class/main.css" />
   </head>
   <body>
-    <h1>欢迎来到我的主页</h1>
-    <hr />
-    <p>欢迎光~临~</p>
+
+    <header>
+        <h1>Bedivere Sun 的 Github Page</h1>
+        <nav>
+            <ul>
+	<li><a href="https://www.bedivere.cn">首页</a></li>
+	<li><a href="https://github.com/bedivere-sun/bedivere-sun.github.io/discussions">论坛</a></li>
+	<li><a href="https://github.com/bedivere-sun/bedivere-sun.github.io/wiki">知识库</a></li>
+	<li><a href="https://github.com/bedivere-sun/bedivere-sun.github.io">本站源码</a>
+	<li><a href="https://github.com/bedivere-sun/bedivere-sun.github.io/issues">问题与勘误</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <p>欢迎来到我的Github Page主页</p>
+
+    <footer>
+        <p>版权所有 &copy; <span id="Year"></span> <a href="www.bedivere.cn">bedivere.cn</a></p>
+    </footer>
   </body>
 </html>
+
+<script>
+let thisYear = new Date().getFullYear();
+document.getElementById("Year").innerHTML = thisYear;
+</script>
