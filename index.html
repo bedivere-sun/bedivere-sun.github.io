@@ -1,8 +1,17 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Bedivere Sun 的 Github Page</title>
     <meta char-set="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./class/main.css" />
+
+    <!-- 引入我的库-->
+    <script src="./js/base.js"></script>
+    <script src="./js/md2html.js"></script>
+    
+
   </head>
   <body>
 
@@ -10,16 +19,18 @@
         <h1>Bedivere Sun 的 Github Page</h1>
         <nav>
             <ul>
-	<li><a href="https://www.bedivere.cn">首页</a></li>
-	<li><a href="https://github.com/bedivere-sun/bedivere-sun.github.io/discussions">论坛</a></li>
-	<li><a href="https://github.com/bedivere-sun/bedivere-sun.github.io/wiki">知识库</a></li>
-	<li><a href="https://github.com/bedivere-sun/bedivere-sun.github.io">本站源码</a>
-	<li><a href="https://github.com/bedivere-sun/bedivere-sun.github.io/issues">问题与勘误</a></li>
+	<li><a target="_self"    href="./">首页</a></li>
+	<li><a target="_blank" href="https://github.com/bedivere-sun/bedivere-sun.github.io/discussions">论坛</a></li>
+	<li><a target="_blank" href="https://github.com/bedivere-sun/bedivere-sun.github.io/wiki">知识库</a></li>
+	<li><a target="_blank" href="https://github.com/bedivere-sun/bedivere-sun.github.io">本站源码</a>
+	<li><a target="__self" href="./pages/about.html">关于我</a></li>
             </ul>
         </nav>
     </header>
 
-    <p>欢迎来到我的Github Page主页</p>
+    <div id="document">
+	<p style="text-align:center;">正在拉取数据，请稍后……</p>
+    </div>
 
     <footer>
         <p>版权所有 &copy; <span id="Year"></span> <a href="www.bedivere.cn">bedivere.cn</a></p>
@@ -27,7 +38,67 @@
   </body>
 </html>
 
+
 <script>
-let thisYear = new Date().getFullYear();
-document.getElementById("Year").innerHTML = thisYear;
+
+
+
+
+
+
+
+
+
+
+let md_text = `
+
+# Hello World!
+
+## 嗯，我试试自己写的markdown转HTML功能……
+
+### H3C 合作账号
+官方下载软件需要用到，默认\`yx800\`密码\`01230123\`
+
+### 清华大学CPAN源的配置
+\`\`\`
+> cpan
+cpan[1]> o conf urllist unshift https://mirrors.tuna.tsinghua.edu.cn/CPAN/
+cpan[2]> o conf commit
+cpan[3]> exit
+\`\`\`
+
+##### 还真tm有个BUG啊……
+关键我也不知道哪里出问题了……嗯……回头再说吧……懒了（喂！）
+\`思考\`：嗯……该如何去掉多余的<p><code></code></p>或者类似这种空标签值呢？……
+头疼，懒得想了，先这样吧，又不是不能看……
+
+#### flatpak国内镜像
+https://mirror.sjtu.edu.cn/docs/flathub
+
+#### 清华大学开源镜像
+https://mirrors.tuna.tsinghua.edu.cn
+
+#### The Linux Documentation Project
+https://tldp.org/
+
+#### FTP：GNU
+ftp://ftp.gnu.org/
+
+
+
+
+`
+
+
+
+
+
+
+
+
+
+
+modHTMLNode("Year", new Date().getFullYear());
+modHTMLNode("document", md2HTML(md_text));
+
 </script>
