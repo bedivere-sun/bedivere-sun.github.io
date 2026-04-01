@@ -1,23 +1,36 @@
 baseURL = 'https://bedivere-sun.github.io'
 locale = 'zh-CN'
 title = 'Bedivere 的 Blog'
-theme = 'fraktur'
-
-disableKinds = ["taxonomy", "term"]
+theme = 'rusty-typewriter'
 
 [params]
   author = 'Bedivere'
   description = '我的Hugo个人博客，最小说Github Pages搭建！'
 
-  
-  # Display options
-  showIntroContentOnHomepage = true
-  showPostsOnHomepage = false
-  
-  # Fonts
-  enableGoogleFonts = true 
-  googleFontsUrl = "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=UnifrakturCook:wght@700&display=swap"
-  
-  # Analytics (optional)
-  # google_analytics_id = "G-XXXXXXXXXX"
-  # plausible_analytics_domain = "yourdomain.com"
+
+
+[params.rtwt]
+  sidePane = true
+  countPageItems = 7
+
+[params.rtwt.home]
+  showBio = true
+  showAuthorImg = true
+  sidePaneTags = true
+  showFeatured = true
+  showRecent = true
+  hideRecentWhenFeatured = true
+  countRecent = 5
+
+[params.rtwt.side.home]
+  sidePaneSticky = false
+  taxonomies = ['tags']
+  countTaxonomy = 5
+
+[params.rtwt.side.single]
+  sidePaneSticky = true
+  showDetails = true
+  showTableOfContents = true
+  showAttachments = true
+  showRelated = true
+  countRelated = 5
