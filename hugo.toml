@@ -1,3 +1,8 @@
-baseURL = 'https://www.bedivere.cn'
+baseURL = 'https://bedivere-sun.github.io'
 locale = 'zh-CN'
 title = 'Bedivere 的 Blog'
+theme = 'ananke'
+
+[params]
+  author = 'Bedivere'
+  description = '我的Hugo个人博客，最小说Github Pages搭建！'
