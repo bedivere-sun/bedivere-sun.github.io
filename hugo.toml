@@ -1,8 +1,23 @@
 baseURL = 'https://bedivere-sun.github.io'
 locale = 'zh-CN'
 title = 'Bedivere 的 Blog'
-theme = 'terminal'
+theme = 'fraktur'
+
+disableKinds = ["taxonomy", "term"]
 
 [params]
   author = 'Bedivere'
   description = '我的Hugo个人博客，最小说Github Pages搭建！'
+
+  
+  # Display options
+  showIntroContentOnHomepage = true
+  showPostsOnHomepage = false
+  
+  # Fonts
+  enableGoogleFonts = true 
+  googleFontsUrl = "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=UnifrakturCook:wght@700&display=swap"
+  
+  # Analytics (optional)
+  # google_analytics_id = "G-XXXXXXXXXX"
+  # plausible_analytics_domain = "yourdomain.com"
