@@ -1,0 +1,13 @@
+{{ define "body_classes" }}page-blog-list{{ end }}
+
+{{ define "main" }}
+  <div class="intro">
+    <h1>{{ .Title }}</h1>
+    {{ if .Params.description }}<p>{{ .Params.description }}</p>{{ end }}
+  </div>
+  {{ .Content }}
+  {{ $posts := where .Pages "Type" "posts" }}
+  {{ range $posts }}
+    {{ .Render "summary" }}
+  {{ end }}
+{{ end }}

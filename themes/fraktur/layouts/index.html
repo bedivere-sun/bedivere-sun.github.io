@@ -1,0 +1,22 @@
+{{ define "body_classes" }}page-home{{ end }}
+
+{{ define "main" }}
+
+  <div class="intro">
+    <h1>{{ .Title }}</h1>
+    {{ if .Site.Params.showIntroContentOnHomepage}}
+      <div class="intro-content">{{ .Content }}</div>
+    {{ end }}
+  </div>
+
+  {{ if .Site.Params.showPostsOnHomepage }}
+    {{ $posts := where .Site.RegularPages "Type" "posts" }}
+    {{ range ($posts.ByParam "date").Reverse }}
+      {{ .Render "summary" }}
+    {{ end }}
+  {{ end }}
+
+{{ end }}
+
+{{ define "footer_js" }}
+{{ end }}

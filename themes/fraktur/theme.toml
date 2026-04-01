@@ -1,0 +1,19 @@
+name = "Hugo Fraktur"
+license = "MIT"
+licenselink = "https://github.com/nthnbch/hugo-fraktur-theme/blob/master/LICENSE"
+description = "A clean, modern Hugo theme featuring mixed Fraktur/Inter typography. Built for readability, elegance, and performance with no pagination or taxonomy bloat."
+version = "1.0.1"
+
+# The home page of the theme, where the source can be found.
+homepage = "https://github.com/nthnbch/hugo-fraktur-theme"
+
+# If you have a running demo of the theme.
+demosite = "https://nathan.swiss"
+
+tags = ["blog", "minimalist", "responsive", "clean", "material-design", "fraktur"]
+features = ["blog", "material-design", "seo", "responsive", "minimalist", "typography", "accessible"]
+
+# If the theme has a single author
+[author]
+    name = "Nathan Buache"
+    homepage = "https://nathan.swiss"
