@@ -67,19 +67,19 @@ pagination.pagerSize = 5
 
 
 
-[params.twitter]
+#[params.twitter]
   # set Twitter handles for Twitter cards
   # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
   # do not include @
-  creator = ""
-  site = ""
+  #creator = ""
+  #site = ""
 
 #[languages]
 
-[module]
+#[module]
   # In case you would like to make changes to the theme and keep it locally in you repository,
   # uncomment the line below (and correct the local path if necessary).
   # --
   # replacements = "github.com/mirus-ua/hugo-theme-re-terminal -> themes/re-terminal"
-[[module.imports]]
-  path = 'github.com/mirus-ua/hugo-theme-re-terminal'
+#[[module.imports]]
+  #path = 'github.com/mirus-ua/hugo-theme-re-terminal'
