@@ -74,7 +74,7 @@ pagination.pagerSize = 5
   creator = ""
   site = ""
 
-[languages]
+#[languages]
 
 [module]
   # In case you would like to make changes to the theme and keep it locally in you repository,
