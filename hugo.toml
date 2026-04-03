@@ -1,7 +1,7 @@
 baseURL = 'https://bedivere-sun.github.io'
 locale = 'zh-CN'
 title = 'Bedivere 的 Blog'
-theme = 'nojs'
+theme = 'terminal'
 
 [params]
   author = 'Bedivere'
